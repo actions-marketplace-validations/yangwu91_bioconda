@@ -15,7 +15,7 @@ jobs:
       - name: Use other Conda channel
         uses: ./
         with:
-          mirror: 'bfsu'
+          mirror: 'default'
           channels: 'yangwu91'
           packages: 'r2g'
           cmd: 'r2g --version'
