@@ -9,7 +9,7 @@ ENV PATH="/opt/miniconda3/bin:$PATH"
 
 RUN apt update -yy && \
     apt upgrade -yy && \
-    apt install -qyy wget vim curl zip git libgl1-mesa-dev && \
+    apt install -qyy wget vim curl zip git iputils-ping libgl1-mesa-dev && \
     wget -qO /tmp/miniconda3.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
     bash /tmp/miniconda3.sh -bfp /opt/miniconda3 && \
 	conda config --add channels defaults && \
